@@ -18,6 +18,7 @@ async function scrapFacebookData() {
   try {
     const browser = await puppeteer.launch({
       headless: false,
+      executablePath: '/usr/bin/chromium-browser',
       args: [
         "--no-sandbox",
         "--disable-setuid-sandbox",
