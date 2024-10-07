@@ -10,6 +10,7 @@
   "description": "",
   "dependencies": {
     "cheerio": "^1.0.0",
+    "express": "^4.21.0",
     "puppeteer": "^23.5.0",
     "request": "^2.88.2",
     "request-promise-native": "^1.0.9"
