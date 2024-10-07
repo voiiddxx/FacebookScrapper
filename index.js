@@ -1,5 +1,5 @@
 const express = require("express");
-const puppeteer = require("puppeteer-core");
+const puppeteer = require("puppeteer");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -18,6 +18,7 @@ async function scrapFacebookData() {
   try {
     const browser = await puppeteer.launch({
       headless: false,
+
       args: [
         "--no-sandbox",
         "--disable-setuid-sandbox",
