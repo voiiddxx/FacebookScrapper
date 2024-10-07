@@ -31,8 +31,8 @@ async function scrapFacebookData() {
       waitUntil: "networkidle2",
     });
 
-    await page.type("#email", "nikhildesign00@gmail.com");
-    await page.type("#pass", "Nikhil@0000");
+    await page.type("#email", "//facebookemail");
+    await page.type("#pass", "facebookpassword");
 
     await page.waitForSelector("#loginbutton");
     await page.click("#loginbutton");
